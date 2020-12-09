@@ -24,7 +24,7 @@ function UniversityCourseModulePanel () {
 
     window.alert("Module Name =  " + moduleName);
   }
-/
+//PROBLEME AICI JOS, IMI DA O EROARE CUM CA NU E FUNCTIE DUPA CE SCRIU CEVA IN FIECARE BARA;
   return (
     
     <div>

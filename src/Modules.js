@@ -1,4 +1,4 @@
-/task 3 
+//task 3 
 import React from 'react';
 
 function Modules (props){
