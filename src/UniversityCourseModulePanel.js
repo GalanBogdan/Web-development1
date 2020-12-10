@@ -1,15 +1,15 @@
 import React from 'react';
+import App, {addCourseForDisplay} from './App'
 
 //task 2 
 function UniversityCourseModulePanel () {
 
-   moduleName = React.useState('ModuleName'),
-   moduleCode = React.useState('ModuleCode'),
-   startDate = React.useState('startDate'); 
-   endDate = React.useState('endDate'); 
-   courseName= React.useState('CourseName'); 
+  const [moduleName, setModuleName] = React.useState('ModuleName');
+  const [moduleCode, setModuleCode] = React.useState('ModuleCode');
+  const [startDate, setStartDate] = React.useState('startDate'); 
+  const [endDate, setEndDate] = React.useState('endDate'); 
+  const [courseName, setCourseName]= React.useState('CourseName'); 
 
-  const list = [moduleName, moduleCode, endDate,courseName];//AICI NU S TIU SIGUR DACA E BINE
 
   
   function clickHandler () {
@@ -24,10 +24,10 @@ function UniversityCourseModulePanel () {
           'courseName':courseName
           
     }
-
-  
    
     window.alert("Module Name =  " + moduleName); 
+
+    addCourseForDisplay(jsonvalue);
   }
 
  
@@ -35,12 +35,13 @@ function UniversityCourseModulePanel () {
   return (
     
     <div>
-        
-     <input  type="text" placeholder="module name" value={moduleName}  onChange= { e => setModuleName(e.target.value) } ></input>
-     <input  type="text" placeholder="module code" value={moduleCode}  onChange= { e => setModuleCode(e.target.value) } ></input>
-     <input  type="text" placeholder="start date" value={startDate}  onChange= { e => setStartDate(e.target.value) } ></input>
-     <input  type="text" placeholder="end date" value={endDate}  onChange= { e => setEndDate(e.target.value) } ></input>
-     <input  type="text" placeholder="course name" value={courseName}  onChange= { e => setCourseName(e.target.value) } ></input>
+      
+      <input  type="text" placeholder="module name" value={moduleName}  onChange= { e => setModuleName(e.target.value) } ></input>
+      <input  type="text" placeholder="module code" value={moduleCode}  onChange= { e => setModuleCode(e.target.value) } ></input>
+      <input  type="text" placeholder="start date" value={startDate}  onChange= { e => setStartDate(e.target.value) } ></input>
+      <input  type="text" placeholder="end date" value={endDate}  onChange= { e => setEndDate(e.target.value) } ></input>
+      <input  type="text" placeholder="course name" value={courseName}  onChange= { e => setCourseName(e.target.value) } ></input>
+
 
 
 
