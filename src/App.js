@@ -10,8 +10,7 @@ function App() {
   return (
     <div>
       <UniversityCourseStudent name="Bogdan" studentId = "21381698" courseName= "Web Developing" courseStartDate="14/10/2020"/>
-      <UniversityCourseModulePanel   />
-      <Modules/> 
+      
     </div>
   );
 }
