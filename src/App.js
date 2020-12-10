@@ -40,12 +40,7 @@ function addCourseForDisplay(jsonvalue) {
 
 function App() {
 
-  return (
-    <div>
-      
-      {modulesElement}
-    </div>
-  );
+  return modulesElement; //de intrebat : I can use this function only one, it wont update twice WHYYYYY!?
 }
 
 export default App;

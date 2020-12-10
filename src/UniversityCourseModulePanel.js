@@ -25,7 +25,7 @@ function UniversityCourseModulePanel () {
           
     }
    
-    window.alert("Module Name =  " + moduleName); 
+    window.alert("Module Code =  " + moduleCode + "\nModule Name= " + moduleName + "\nStart Date= " + startDate + "\nEnd Date= " + endDate + "\nCourse Name= " + courseName ); 
 
     addCourseForDisplay(jsonvalue);
   }
